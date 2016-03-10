@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>J Content Carousel</name>
+	<author>Md. Shaon Bahadur</author>
+	<creationDate>July 2013</creationDate>
+	<copyright>Copyright (C) 2013 j-download.com, All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@j-download.com</authorEmail>
+	<authorUrl>www.j-download.com</authorUrl>
+	<version>1.0.2</version>
+	<description>
+        <![CDATA[
+            <table width="80%" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td>
+              <table width="100%" cellpadding="5" cellspacing="5" border="0"><tr><td valign="top"><img src="../modules/mod_jcontentcarousel/tmpl/images/jcontentcarousel.png" border="0" /></td>
+              <td valign="top" style="padding-left:60px;">
+                <p style="text-align: left;">J Content Carousel shows article from a category or from all the category in a slide show. Detail link open article in a new slider window. Facebook, Twitter and Linked share is also available for this module.</p>
+                <p style="text-align: left;">Major Module Parameter:</p>
+                <p style="text-align: left;">
+                    <ul style="text-align: left;">
+                        <li>Category Selection</li>
+                        <li>Width</li>
+                        <li>Height</li>
+                        <li>Background Color</li>
+                        <li>Font Color</li>
+                        <li>Auto Scroll with Time</li>
+                        <li>Title, Read more, Navigation and Social icon display with Yes, No Feature.</li>
+                    </ul>
+                </p>
+              </td></tr></table>
+            </td></tr>
+            </table>
+            ]]>
+    </description>
+	<files>
+		<filename module="mod_jcontentcarousel">mod_jcontentcarousel.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+        <filename>mod_jcontentcarousel.xml</filename>
+	</files>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_LOGIN" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+            <field name="catid" type="category" extension="com_content" multiple="false" size="1" default="0" label="JCATEGORY" description="MOD_LATEST_NEWS_FIELD_CATEGORY_DESC" >
+			    <option value="">JOPTION_ALL_CATEGORIES</option>
+			</field>
+			<field name="width" type="text" default="660" filter="safehtml" label="Wrapper Width" description="Please Enter Width" class="inputbox" />
+            <field name="height" type="text" default="400" filter="safehtml" label="Wrapper Height" description="Please Enter Height" class="inputbox" />
+            <field name="titlecolor" type="text" default="#000000" filter="safehtml" label="Wrapper Title Color" description="Please Enter Title Color" class="inputbox" />
+            <field name="textcolor" type="text" default="#FFFFFF" filter="safehtml" label="Wrapper Text Color" description="Please Enter Text Color" class="inputbox" />
+			<field name="backgroundcolor" type="text" default="#FFFFFF" filter="safehtml" label="Wrapper Background" description="Please Enter Background Color" class="inputbox" />
+			<field name="textlength" type="text" default="200" filter="safehtml" label="Intro Text Length" description="Please Enter Intro Text Length" class="inputbox" />
+            <field name="autoscroll" type="radio" default="1" label="Auto Scroll" description="Please Select Yes or No For Auto Scroll." class="btn-group">
+			    <option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+            <field name="scrollspeed" type="text" default="6000" filter="safehtml" label="Scroll Speed" description="Please Enter Scroll Speed" class="inputbox" />
+            <field name="showtitle" type="radio" default="1" label="Show Title" description="Please Select Yes or No For Show Title." class="btn-group">
+			    <option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+            <field name="showreadmore" type="radio" default="1" label="Show Read More" description="Please Select Yes or No For Show Read More." class="btn-group">
+			    <option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+            <field name="navigation" type="radio" default="1" label="Show Navigation" description="Please Select Yes or No For Navigation." class="btn-group">
+			    <option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+            <field name="socialicon" type="radio" default="1" label="Show Social Icon" description="Please Select Yes or No For Social Icon." class="btn-group">
+			    <option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>
+            <field name="customcss" type="textarea" rows="10" cols="35" default="#j_content_wrapper .ca-item h3{ color: #000000 !important; }" filter="safehtml" label="Custom Css" description="Please Enter Custom Css" />
+
+			</fieldset>
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

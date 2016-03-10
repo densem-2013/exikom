@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="exikom" type="PhpBehatConfigurationType" factoryName="Behat" singleton="true">
+    <BehatRunner directory="C:\Server\domains\localhost\public_html\exikom" scenario="" />
+    <method />
+  </configuration>
+</component>

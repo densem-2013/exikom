@@ -1,0 +1,73 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+@import url(https://fonts.googleapis.com/css?family=Italiana);
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 80%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#jsn-gotoplink,
+.page-header,
+.subheading-category,
+#jsn-menu a,
+#jsn-menu span,
+.componentheading,
+.contentheading,
+.breadcrumbs,
+a {
+	font-family: 'Lobster', Georgia, serif;
+}
+body.jsn-textstyle-personal ul.menu-mainmenu > li > a {
+	font-weight: bold;
+}
+body.jsn-textstyle-personal .jsn-moduletitle {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+body.jsn-textstyle-personal .contentheading,
+body.jsn-textstyle-personal .componentheading,
+body.jsn-textstyle-personal .subheading,
+body.jsn-textstyle-personal .item-title {
+	font-size: 1.6em;
+}
+body.jsn-textstyle-personal .jsn-moduletitle {
+	font-size: 1.3em;
+	font-weight: normal;
+}
+body.jsn-textstyle-personal ul.menu-mainmenu li a span {
+	font-size: 1.15em;
+	font-weight: normal;
+}
+body.jsn-textstyle-personal h1 {
+	font-size: 1.6em;
+}
+body.jsn-textstyle-personal h2 {
+	font-size: 1.5em;
+}
+body.jsn-textstyle-personal h3 {
+	font-size: 1.4em;
+}
+body.jsn-textstyle-personal h4 {
+	font-size: 1.3em;
+}
+body.jsn-textstyle-personal h5,
+body.jsn-textstyle-personal h6 {
+	font-size: 1.2em;
+}
+body.jsn-textstyle-personal h1,
+body.jsn-textstyle-personal h2,
+body.jsn-textstyle-personal h3,
+body.jsn-textstyle-personal h4,
+body.jsn-textstyle-personal h5,
+body.jsn-textstyle-personal h6 {
+	font-weight: normal;
+}

@@ -1,0 +1,113 @@
+#j_content_wrapper .jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+#j_content_wrapper .jspPane
+{
+	position: absolute;
+}
+
+#j_content_wrapper .jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 10px;
+	height: 100%;
+	background: #fff;
+
+}
+
+#j_content_wrapper .jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	background: #fff;
+}
+
+#j_content_wrapper .jspVerticalBar *,
+#j_content_wrapper .jspHorizontalBar *
+{
+	margin: 0;
+	padding: 0;
+}
+
+#j_content_wrapper .jspCap
+{
+	display: none;
+}
+
+#j_content_wrapper .jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+#j_content_wrapper .jspTrack
+{
+	background: #fff;
+	position: relative;
+}
+
+#j_content_wrapper .jspDrag
+{
+	background: #000;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+#j_content_wrapper .jspHorizontalBar .jspTrack,
+#j_content_wrapper .jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+#j_content_wrapper .jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+}
+
+#j_content_wrapper .jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+#j_content_wrapper .jspVerticalBar .jspArrow
+{
+	height: 10px;
+}
+
+#j_content_wrapper .jspHorizontalBar .jspArrow
+{
+	width: 10px;
+	float: left;
+	height: 100%;
+}
+
+#j_content_wrapper .jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+#j_content_wrapper .jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}

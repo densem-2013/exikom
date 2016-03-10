@@ -1,0 +1,49 @@
+@import url('jcontentcarousel_reset.css');
+
+#j_content_wrapper a{
+	color:#000;
+	text-decoration:none;
+}
+#j_content_wrapper .clr{
+	clear:both;
+}
+#j_content_wrapper h1,#j_content_wrapper h5{
+	margin:15px;
+	font-size:44px;
+	color:#000;
+	font-family: 'Rochester', sans-serif;
+	text-shadow:1px 1px 1px #fff;
+	text-align:center;
+}
+#j_content_wrapper h1 span,#j_content_wrapper h5{
+	font-size:20px;
+	display:block;
+	color:#60817a;
+}
+/* Header Style */
+#j_content_wrapper .header{
+	height:25px;
+	line-height:24px;
+	font-size:13px;
+	background:#000;
+	opacity:0.9;
+	text-transform:uppercase;
+	z-index:4;
+}
+#j_content_wrapper .header a{
+	padding:5px 10px;
+	letter-spacing:1px;
+	text-shadow:1px 1px 1px #000;
+	color:#ddd;
+	text-align:right;
+}
+#j_content_wrapper .header a:hover{
+	color:#fff;
+}
+#j_content_wrapper .header a span{
+	font-weight:bold;
+}
+#j_content_wrapper .header span.right_ab{
+	position:absolute;
+	right:4px;
+}

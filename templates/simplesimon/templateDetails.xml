@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension type="template" version="2.5" method="upgrade">
+	
+	<name>SimpleSimon</name>
+	<author>Simon Dowdles</author>
+	<creationDate>June 2013</creationDate>
+	<authorEmail>simon@simondowdles.com</authorEmail>
+	<authorUrl>http://www.onestuckpixel.com</authorUrl>
+	<copyright>Copyright (C) 2011 Simon Dowdles. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later.</license>
+	<version>2.5.0</version>
+	<description>A simple template that allows your fields to be rendered with NO div wrappers, or wrappers you specify.</description>
+	
+	<files>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>positions</folder>
+		<folder>variations</folder>
+		<folder>fields</folder>
+		<folder>includes</folder>
+		<folder>languages</folder>
+		<filename>config.php</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages folder="languages">
+	</languages>
+	
+	<positions>
+		<position>mainbody</position>
+		<position>topbody</position>
+		<position>bottombody</position>		
+		<position>hidden</position>
+	</positions>
+
+	
+</extension>

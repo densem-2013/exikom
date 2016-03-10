@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="1.7" client="site" method="upgrade">
+ <name>ZS Tag Cloud</name>
+ <author>Zhanibek Sarsembayev</author>
+ <creationDate>15/10/2011</creationDate>
+ <copyright>Copyright (C) 2011. All rights reserved.</copyright>
+ <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+ <authorEmail>jakentus@gmail.com</authorEmail>
+ <authorUrl>www.kzhoster.com</authorUrl>
+ <version>1.0.0</version>
+ <description>3d Tag Cloud</description>
+ <languages>
+ </languages>
+ <files>
+  <filename module="mod_zstagcloud">mod_zstagcloud.php</filename>
+  <filename>mod_zstagcloud.xml</filename>
+  <filename>helper.php</filename>
+  <filename>index.html</filename>
+  <folder>tmpl</folder>
+<folder>js</folder>
+<folder>swf</folder>
+ </files>
+ <config>
+  <fields name="params">
+   
+   <fieldset name="basic">
+   
+<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="Suffix for individual css styling" />
+      
+   <field name="animated" type="radio" default="1" label="Animated" description="Animation enabled">
+     		<option value="0">JNO</option>
+     		<option value="1">JYES</option>
+    	</field>
+		<field name="width" type="text" default="180" label="Width" description="the width of tag cloud" />
+		<field name="height" type="text" default="180" label="Height" description="the height of tag cloud" />
+		<field name="speed" type="text" default="100" label="Speed" description="the speed of animation" />
+		<field name="tcolor1" type="text" default="1D3D61" label="Text color 1" description="Text color 1" />
+		<field name="tcolor2" type="text" default="4D6D91" label="Text color 2" description="Text color 2" />
+		<field name="hcolor" type="text" default="d193978" label="Highlight color" description="Highlight color" />
+		<field name="bcolor" type="text" default="FFFFFF" label="Background color" description="Background color" />
+		<field name="transparent" type="radio" default="1" label="Transparent" description="Transparent">
+     		<option value="0">JNO</option>
+     		<option value="1">JYES</option>
+    	</field>
+   </fieldset>
+   
+   <fieldset name="advanced">
+   
+   <field type="spacer" label="======== Tag 1 ========"/>
+	<field name="name_1" type="text" label="Tag Name" description=""/>
+	<field name="url_1" type="text" label="Tag Url" description=""/>
+	<field name="size_1" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 2 ========"/>
+	<field name="name_2" type="text" label="Tag Name" description=""/>
+	<field name="url_2" type="text" label="Tag Url" description=""/>
+	<field name="size_2" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 3 ========"/>
+	<field name="name_3" type="text" label="Tag Name" description=""/>
+	<field name="url_3" type="text" label="Tag Url" description=""/>
+	<field name="size_3" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 4 ========"/>
+	<field name="name_4" type="text" label="Tag Name" description=""/>
+	<field name="url_4" type="text" label="Tag Url" description=""/>
+	<field name="size_4" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 5 ========"/>
+	<field name="name_5" type="text" label="Tag Name" description=""/>
+	<field name="url_5" type="text" label="Tag Url" description=""/>
+	<field name="size_5" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 6 ========"/>
+	<field name="name_6" type="text" label="Tag Name" description=""/>
+	<field name="url_6" type="text" label="Tag Url" description=""/>
+	<field name="size_6" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 7 ========"/>
+	<field name="name_7" type="text" label="Tag Name" description=""/>
+	<field name="url_7" type="text" label="Tag Url" description=""/>
+	<field name="size_7" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 8 ========"/>
+	<field name="name_8" type="text" label="Tag Name" description=""/>
+	<field name="url_8" type="text" label="Tag Url" description=""/>
+	<field name="size_8" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 9 ========"/>
+	<field name="name_9" type="text" label="Tag Name" description=""/>
+	<field name="url_9" type="text" label="Tag Url" description=""/>
+	<field name="size_9" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 10 ========"/>
+	<field name="name_10" type="text" label="Tag Name" description=""/>
+	<field name="url_10" type="text" label="Tag Url" description=""/>
+	<field name="size_10" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 11 ========"/>
+	<field name="name_11" type="text" label="Tag Name" description=""/>
+	<field name="url_11" type="text" label="Tag Url" description=""/> 
+	<field name="size_11" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 12 ========"/>
+	<field name="name_12" type="text" label="Tag Name" description=""/>
+	<field name="url_12" type="text" label="Tag Url" description=""/>
+	<field name="size_12" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 13 ========"/>
+	<field name="name_13" type="text" label="Tag Name" description=""/>
+	<field name="url_13" type="text" label="Tag Url" description=""/>
+	<field name="size_13" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 14 ========"/>
+	<field name="name_14" type="text" label="Tag Name" description=""/>
+	<field name="url_14" type="text" label="Tag Url" description=""/>
+	<field name="size_14" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 15 ========"/>
+	<field name="name_15" type="text" label="Tag Name" description=""/>
+	<field name="url_15" type="text" label="Tag Url" description=""/>
+	<field name="size_15" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 16 ========"/>
+	<field name="name_16" type="text" label="Tag Name" description=""/>
+	<field name="url_16" type="text" label="Tag Url" description=""/>
+	<field name="size_16" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 17 ========"/>
+	<field name="name_17" type="text" label="Tag Name" description=""/>
+	<field name="url_17" type="text" label="Tag Url" description=""/>
+	<field name="size_17" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 18 ========"/>
+	<field name="name_18" type="text" label="Tag Name" description=""/>
+	<field name="url_18" type="text" label="Tag Url" description=""/>
+	<field name="size_18" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 19 ========"/>
+	<field name="name_19" type="text" label="Tag Name" description=""/>
+	<field name="url_19" type="text" label="Tag Url" description=""/>
+	<field name="size_19" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 20 ========"/>
+	<field name="name_20" type="text" label="Tag Name" description=""/>
+	<field name="url_20" type="text" label="Tag Url" description=""/>
+	<field name="size_20" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 21 ========"/>
+	<field name="name_21" type="text" label="Tag Name" description=""/>
+	<field name="url_21" type="text" label="Tag Url" description=""/>
+	<field name="size_21" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 22 ========"/>
+	<field name="name_22" type="text" label="Tag Name" description=""/>
+	<field name="url_22" type="text" label="Tag Url" description=""/>
+	<field name="size_22" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 23 ========"/>
+	<field name="name_23" type="text" label="Tag Name" description=""/>
+	<field name="url_23" type="text" label="Tag Url" description=""/>
+	<field name="size_23" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 24 ========"/>
+	<field name="name_24" type="text" label="Tag Name" description=""/>
+	<field name="url_24" type="text" label="Tag Url" description=""/>
+	<field name="size_24" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 25 ========"/>
+	<field name="name_25" type="text" label="Tag Name" description=""/>
+	<field name="url_25" type="text" label="Tag Url" description=""/>
+	<field name="size_25" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 26 ========"/>
+	<field name="name_26" type="text" label="Tag Name" description=""/>
+	<field name="url_26" type="text" label="Tag Url" description=""/>
+	<field name="size_26" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 27 ========"/>
+	<field name="name_27" type="text" label="Tag Name" description=""/>
+	<field name="url_27" type="text" label="Tag Url" description=""/>
+	<field name="size_27" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 28 ========"/>
+	<field name="name_28" type="text" label="Tag Name" description=""/>
+	<field name="url_28" type="text" label="Tag Url" description=""/>
+	<field name="size_28" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 29 ========"/>
+	<field name="name_29" type="text" label="Tag Name" description=""/>
+	<field name="url_29" type="text" label="Tag Url" description=""/>
+	<field name="size_29" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	<field type="spacer" label="======== Tag 30 ========"/>
+	<field name="name_30" type="text" label="Tag Name" description=""/>
+	<field name="url_30" type="text" label="Tag Url" description=""/>
+	<field name="size_30" type="text" label="Tag Font Size" description="" default="15"/>
+	
+	
+   </fieldset>
+  </fields>
+ </config>
+</extension>

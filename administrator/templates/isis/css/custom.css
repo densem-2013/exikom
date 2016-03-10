@@ -1,0 +1,6 @@
+.field_inline> *{
+	display: inline;
+}
+.EditInput{
+	width: 120px !important;
+}

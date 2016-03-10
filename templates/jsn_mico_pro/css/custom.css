@@ -1,0 +1,1044 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   JoomlaShine.com Proprietary License
+*/
+/* ============================== CUSTOM CSS ============================== */
+.demo-frontpage h2,
+.demo-frontpage h3 {
+	text-shadow:1px 1px 1px #FFF !important;
+	margin: 0;
+}
+.demo-frontpage h3 {
+	padding-bottom: 5px;
+}
+.demo-frontpage h2 {
+	margin-top: 5px;
+}
+.demo-frontpage p {
+	margin: 0;
+}
+.demo-frontpage span {
+	font-size: 0.9em;
+	display: block;
+	margin: 3px 0;
+	color: #999;
+}
+.demo-frontpage .jsn-template-featured {
+	padding-top: 14px;
+}
+.demo-frontpage .jsn-template-featured img {
+	max-width: 100%;
+}
+.demo-frontpage div.grid-layout2 div.grid-col {
+	width: 49.9%;
+}
+.demo-frontpage div.grid-layout2 div.grid-col.grid-lastcol {
+	float: right;
+}
+.demo-frontpage ul.jsn-template-list {
+	list-style: none;
+	border-left: 1px solid #ececec;
+	margin: 0;
+	box-shadow: -1px 0px 0px 0px #fff;
+}
+.demo-frontpage ul.jsn-template-list li {
+	border-bottom: 1px dotted #ccc;
+	padding:10px 0;
+	margin: 0 0 0 10px;
+}
+.demo-frontpage ul.jsn-template-list li:last-child {
+	border-bottom: none;
+}
+.article_separator {
+	display: none;
+}
+.custom-height {
+	height: 10px;
+}
+@media only screen and (max-width: 960px), (max-device-width: 960px) {
+	.demo-frontpage {
+		width:auto;
+		float:none;
+	}
+	.demo-frontpage ul.jsn-template-list {
+		border-left: none;
+	}
+}
+@media only screen and (max-width: 480px), (max-device-width: 480px) {
+	.demo-frontpage ul.jsn-template-list li{
+		margin: 0;
+	}
+	.demo-frontpage div.grid-layout2 div.grid-col {
+		width: 100%;
+	}
+	.jsn-desktop-on-mobile .demo-frontpage div.grid-layout2 div.grid-col {
+		width: 49.9%;
+	}
+}
+
+div.vertical div.cck_forms.cck_search div.cck_label{
+    width: 100%;
+}
+table{
+	table-layout: fixed;
+}
+
+/*Поставки*/
+/*
+.categories-list_delivery_page{
+	display:table;
+    background-image: linear-gradient(to right,#E7F3EE,#EEEEEE);
+}
+.categories-list_delivery_page  a.link-button{
+    color: #232121 !important;
+}
+.categories-list_delivery_page > div{
+	border : 5px ridge;
+	width: 28%;
+	display:inline-block;
+	//background:#89D480 ;
+    background-image: linear-gradient(to bottom,#F0F5F4,#AFCBF3);
+	padding:10px;
+}
+.categories-list_delivery_page > div{
+	vertical-align:middle;
+	margin-top:auto; 
+	margin:2px;
+}
+.categories-list_delivery_page{
+	text-align:center;
+}
+.categories-list_delivery_page img{
+    border: 3px rgba(241, 231, 223, 0.83) ridge;
+}
+.categories-list_delivery_page> div > h3.page-header.item-title{
+	display:none;
+}
+.categories-list_delivery_page  .deliveryTable{
+	height:270px;  
+    border: 3px ridge #DFE0E8;
+}
+.categories-list_delivery_page  a img:hover{
+	background: #F2F7AC;
+}
+*/
+._delivery_page  .sprocket-mosaic-item {
+    background-image:linear-gradient(to left,#D4DCDC,rgba(169, 210, 206, 0.23));
+	background-image: -moz-linear-gradient(to left,#D4DCDC,rgba(169, 210, 206, 0.23));
+	
+}
+._delivery_page  #jsn-centercol_inner {
+    padding: 0 !important;
+	
+}
+._delivery_page  div.jsn-modulecontent {
+    margin: 10px 30px 10px 0 !important;
+}
+._delivery_page #jsn-pos-top div.jsn-modulecontent {
+    margin: 0px 5px 0 10px 0 !important;
+	
+}
+._delivery_page  .bt-delivery-on-main div.jsn-modulecontent {
+    margin: 0 !important;
+	
+}
+._delivery_page  #jsn-leftsidecontent div.jsn-modulecontent {
+    margin: 0 !important;
+	
+}
+._delivery_page  h2.sprocket-mosaic-title {
+    //margin: 10px 5px 5px 0!important;
+	
+}
+._delivery_page  .sprocket-mosaic-hovercontent{
+	background-color: #434343;
+	border-radius: 10px;
+	
+}
+._delivery_page  .sprocket-mosaic-image-container a:hover{
+	color: #FFFFFF;
+}
+.bt-delivery-on-main img.dj-image{
+	//background-color: #D6EFDF !important;
+}
+.bt-delivery-on-main img.dj-image:hover{
+	background-color: #EEF174 !important;
+	cursor: crosshair;
+}
+.bt-delivery-on-main .slide-title{   
+	color: #F1B426 !important;
+    text-shadow: -1px 0px #131212, 0px 1px #222321, 1px 0px #1B1D1B, 0px -1px #2F2F2E;
+}
+
+.bt-delivery-on-main a img:not(:hover){   
+	background-color: #ffffff !important;
+}
+.bt-delivery-on-main .jsn-modulecontainer_inner{  
+    background-color: rgba(0, 0, 0, 0.11) !important;
+}
+.bt-delivery-on-main div.jsn-modulecontainer_inner {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15)!important;
+}
+/*Главная*/
+.bt-csServicesOnMainNodule  .bt-introtext, .bt-csServicesOnMainNodule h3{
+	text-align:center;
+}
+.jsn-mod-newsflash .jsn-article h4:first-child a{
+	color: #E89848;
+}
+.jsn-mod-newsflash .jsn-article h4:nth-child(2) {
+	color: #D1CE1D;
+}
+.jsn-homepage .slide-desc-text-default .slide-title a {   
+    color: rgb(0, 0, 0);
+    text-shadow: -2px 0px #EAE784, 0px 2px #E4E8E0, 2px 0px #F5F9F5, 0px -2px #F7ECB7;
+}
+.jsn-homepage .slide-desc-text-default .slide-title {   
+    background-image:linear-gradient(to left,#DCE8E8,rgba(134, 224, 215, 0.23));
+	background-image: -moz-linear-gradient(to left,#DCE8E8,rgba(134, 224, 215, 0.23));
+	text-align:center;
+}
+.jsn-homepage .tag-cloud .jsn-modulecontainer_inner{
+	padding: 10px 5px 0 5px !important;
+}
+.jsn-homepage .tag-cloud .jsn-modulecontainer_inner h3.jsn-moduletitle{
+	margin: -10px -5px 0 -5px; !important;
+}
+
+.jsn-homepage  .moduletablemain_news .btn{
+	
+    background-image: linear-gradient(to bottom,#E1ECEC,#8CD0C9);
+}
+.jsn-homepage  .moduletablemain_news .btn:hover{
+	
+    background-color: #98E6BA;
+}
+.jsn-homepage  .moduletablemain_news .bt-inner >*{
+	padding-bottom:5px;
+	margin-bottom: -5px;
+    margin-top: 10px;
+}
+.jsn-homepage .moduletablemain_news .bt-title{
+    font-weight: normal !important;
+	line-height: 130% !important;
+}
+.jsn-homepage .moduletablemain_news .bt-introtext{
+	text-align:justify;
+}
+.jsn-homepage .moduletablemain_news .bt-extra{
+	margin-top: 0px;
+    background-image: linear-gradient(to right,#E1ECEC,#8CD0C9);  
+	padding-left: 5px;
+}
+.jsn-homepage .moduletablemain_news .readmore{
+    left: 10px;
+}
+.jsn-homepage .moduletablemain_news .btn{
+	line-height:14px;	
+}
+.jsn-homepage .moduletablemain_news .bt-inner {
+    height: 175px;
+    padding-right: 5px;
+}
+.jsn-homepage .bt-delivery-on-main  a img{
+	height:100% !important;
+}
+.jsn-homepage .grid-layout .grid-col:first-child{
+	width:35%;
+}
+.jsn-homepage .grid-layout .grid-col:nth-child(2){
+	width:64.90%;
+}
+.jsn-homepage .grid-layout li.clearafter:not:(:last-child){
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 0;
+    margin: 0 0 0 10px;
+}
+.jsn-homepage .grid-layout .grid-col p {
+	margin: 0;
+}
+.main_news  div.news-title  {    
+	clear: both;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 150%;
+}
+.main_news  div.news-title a{
+    //color: #D67900;
+}
+  .main_news .mod-articles-category-date{
+    color: #16A763;
+  }
+.main_news  div.news-title a:hover{
+    text-shadow: 1px 0px #773D11, 0px -1px #557B80;
+}
+.jsn-homepage .bt-delivery-on-main  .jsn-moduletitle{
+	text-align: center;
+}
+.bt-delivery-on-main ul.djslider-in > li  img{ 
+	border: 4px double #dddddd !important;
+    border-radius: 4px !important;
+}
+.jsn-homepage .articlelist-first-thumbnail{
+	text-align:justify;
+}
+.jsn-homepage .pb-articlelist-head{
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+	text-align: center;
+	color: #000;   
+	font-family: "Crimson Text",Verdana,Geneva,sans-serif;
+	text-transform: uppercase;
+}
+.jsn-homepage  .pb-articlelist-first .first-thumbnail{
+	text-align:center;
+}
+.jsn-homepage   .pb-articlelist-first .title{
+	text-align:center;
+}
+.jsn-homepage   .jsn-mod-newsflash .jsn-article{
+	text-align:justify;
+}
+.jsn-homepage ul.jsn-template-list {
+    list-style: none;
+    border-left: 1px solid #ececec;
+    margin: 0;
+    box-shadow: -1px 0px 0px 0px #fff;
+}
+h3.jsn-moduletitle, div.jsn-modulecontainer ul.menu-treemenu li a, div.jsn-modulecontainer ul.menu-sidemenu li a{
+	font-weight:normal !important;
+}
+.jsn-homepage .img-thumbnail {
+	float: left;
+    margin: 0.5em 1em 0.5em 0;
+    padding: 4px;
+    line-height: 1.428571429;
+    //background-color: #ffffff;
+    border: 4px double #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+}
+.jsn-homepage .img-thumbnail:hover {
+	background-color: rgba(201, 205, 206, 0.79);
+}
+#mod-search-searchword{   
+	min-height: 15px;
+    height: 18px;
+    padding: 0px;
+    margin-bottom: 2px;
+}
+div.search label[for="mod-search-searchword"]{
+	margin-bottom:0px;
+}
+ul.menu-topmenu li.last:not(.first)  a,.menu-topmenu.menu-iconmenu li.first.last a{     
+ 
+	background-image: -webkit-linear-gradient(top, #EADDDD , rgb(169, 166, 166));
+	background-image: -moz-linear-gradient(top, #EADDDD , rgb(169, 166, 166));
+	background-image: linear-gradient(top, #EADDDD , rgb(169, 166, 166));
+}
+ul.menu-topmenu li a:hover{
+	box-shadow: 0px 0px 20px #FFF, 0px 0px 20px rgba(58, 81, 47, 0.3) inset !important;
+}
+#jsn-pos-top .jsn-modulecontainer_inner{
+	//padding-top:5px;
+}
+
+div.mod-languages ul{
+	padding-top: 3px !important;
+}
+.moduletable{   
+	display: -moz-inline-box;
+    display: -webkit-inline-box;
+}
+
+.jsn-homepage .bt-cs.bt-csmain_news h3{
+	color: #000;
+    line-height: 37px;
+    text-indent: 0px;
+    text-transform: uppercase;
+    background: transparent ;
+    height: 37px;
+    border: 0px;
+    margin: 0px !important;
+}
+
+.jsn-homepage .bt-cs.bt-csmain_news h3.jsn-moduletitle {
+    font-size: 1.2em;    
+	padding: 0px 5px 5px 0px;
+	width:95%;
+}
+
+.jsn-homepage .bt-cs.bt-csmain_news h3.jsn-moduletitle:hover{
+	background:#EEEEEE;    
+}
+.jsn-homepage .bt-cs.bt-csmain_news h3.jsn-moduletitle a:hover{
+	text-decoration: underline;
+}
+
+/* О компании*/
+.about_page .item-pageabout_page div.grid-layout2 div.grid-col {
+    width: 47%;
+    padding: 5px;
+    text-align: justify;
+}
+.about_page .page-header{
+	border-bottom:2px solid rgb(102,102,102);
+}
+
+/*Системы автоматизации*/
+.blogpage_delivery_cns img{
+	width:90%;
+}
+.page_autosys img{
+	margin: 0 !important;
+}
+.page_autosys .simatik_auto{
+    margin: 10px 0 10px;
+}
+.page_autosys div.items_container div{
+	text-align: center;
+	padding: 5px 0 0;
+}
+.page_autosys .dropcap{
+    margin-left: 40px;
+}
+.page_autosys .catImage{
+	width:290px;
+	height:180px;
+}
+.page_autosys .jsn-bootstrap3 .row {
+    margin-right: 0;
+    margin-left: 0;
+}
+.page_autosys   a img:hover{
+	background:#A9F5EB;
+}
+.page_autosys .jsn-bootstrap3 p {
+    margin: 0;
+}
+.page_autosys .jsn-bootstrap3:nth-child(4) .dropcap{
+    margin-left: 80px;
+}
+.page_autosys .jsn-bootstrap3:nth-child(7) img{
+	height:150px;
+}
+/*Услуги */
+.service_page #jsn-mainbody-content .jsn-modulecontainer_inner{
+	margin: 10px 30px 10px 0 !important;
+}
+
+/*Распределённые системы ввода-вывода*/
+.showcase_item:nth-child(odd) {
+    background: #d6dcde30;
+    border-color: #c4cacc;
+}
+.items_container {
+	margin: 10px;
+    background: #e8eced;
+    background-clip: border-box;
+    border: 2px ridge #dfe2e3;
+    border-radius: 5px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+ .distributed_io .singleVert_img .img-thumbnail{
+	width: 130px;
+	height: 220px !important;
+}
+ .distributed_io .singleHoriz_img .img-thumbnail{
+	width: 110px;
+	height: 80px !important;
+}
+ .page_autosys  table{
+    float: left;
+ }
+ .page_autosys  tr:first-child  td:nth-child(2)>div.singleHoriz_img{
+	 padding-top:25px !important;
+}
+ .page_autosys  tr:nth-child(2)  td:nth-child(2)>div.singleHoriz_img{
+	 padding-bottom:35px !important;
+}
+ .page_autosys tr:nth-child(2)  td:first-child>div.singleHoriz_img{
+	 padding-bottom:15px !important;
+}
+a img:not(:hover){   
+	background-color: transparent !important;
+}
+ .item-pagepage_autosys .jsn-bootstrap3:nth-child(5)  img.img-thumbnail{
+    height: 290px;
+    width: 180px;
+}
+ .item-pagepage_autosys .jsn-bootstrap3:nth-child(7)  .text-center{
+    padding-top: 60px;
+}
+ .distributed_io .jsn-bootstrap3  .articlelist-item >*, .distributed_io .jsn-bootstrap3 .articlelist-item-description {
+	text-align:left;
+}
+.page_autosys .jsn-bootstrap3 td{
+	padding: 0 5px 0 0 ;
+    margin: 15px;
+}
+.page_autosys .jsn-bootstrap3 {
+    margin: 10px;
+}
+.distributedIO_page .span4{
+    background-image: linear-gradient(to bottom,#F9F3F5,#8BBFF5);
+    background-clip: border-box;
+    border: 5px ridge #dfe2e3;
+    border-radius: 5px;
+    height: 420px;
+	margin:5px;
+	padding: 5px;
+    color: darkred;
+	
+}
+.distributedIO_page .span4 .page-header{
+	text-align: center;
+}
+.distributedIO_page .span4 .item{
+	height:100%;
+	position: relative;
+}
+.distributedIO_page .span4 .readmore{
+	position:absolute;
+    bottom: 15px;
+	left:10px;
+}
+.distributedIO_page .btn:hover{
+	
+    background-color: #98E6BA;
+}
+.distributedIO_page .btn{
+	
+    background-image: linear-gradient(to bottom,#E1ECEC,#8CD0C9);
+}
+.distributedIO_page .items-row:nth-child(2) img{
+	width:220px !important;
+}
+.distributedIO_page .items-row:nth-child(3) .span4:not(:first-child) img{
+	width:220px !important;
+}
+.distributedIO_page .items-row:nth-child(3) .span4:first-child img{
+	width:90px !important;
+}
+.distributedIO_page .items-row:nth-child(3) .span4:last-child tr:nth-child(2) td{
+	position:relative;
+}
+.distributedIO_page .items-row:nth-child(3) .span4:last-child tr:nth-child(2) td p{   
+	position: absolute;
+	top: 0px;
+}
+.exikom_copyright{
+    text-align: center;
+    //background-image: linear-gradient(to right,#DCDCDC,#0E0E0E);
+	background-color:#333;
+	background-image: -webkit-linear-gradient(top, #4f4f4f, #333);
+	background-image: -moz-linear-gradient(top, #4f4f4f, #333);
+	color: #fff;
+	//text-shadow: -1px 0px #FFFFFF, 0px 1px #BFEF98, 1px 0px #AAEAA1, 0px -2px #FFFFFF;
+    background-clip: border-box;
+    border: 1px solid #222;
+    border-radius: 7px;
+    height: 40px;
+    font-size: 100%;
+}
+/*Подразделения*/
+.departments_page table img{
+	width:200px;
+	height:150px;
+    max-width: 200px;
+}
+
+/*Проекты*/
+.projects_page #jsn-maincontent_inner{
+	background: transparent !important;
+}
+.projects_page #jsn-maincontent_inner h1{
+	color: black !important;
+}
+
+.projects_page:not(.jsn-com-content)  .cck-pos-mainbody.seb_css3{
+	height: 410px !important;
+	//background-image: -webkit-linear-gradient(top, #FDEDED, #B6E5F3);
+	//background-image: -moz-linear-gradient(top, #FDEDED, #B6E5F3);
+}
+.projects_page .item-pageprojects_page{
+	padding: 10px;
+}
+.projects_page  .cck_project_company .cck_value_text{
+	height: 30px !important;
+}
+
+.projects_page  .cck-pos-top-c {
+	min-height:60px;
+}
+
+.projects_page  div[class^='year-']{
+	display: inline-block;
+	padding: 0 10px 0 10px;
+}
+
+.projects_page  div[class^='intro-']{
+	padding: 0 10px 0 10px;
+	text-align: justify;
+}
+.projects_page  .intro-value{
+    max-height: 75px;
+    //overflow-y: hidden;
+}
+.projects_page  .intro-label{
+	white-space: nowrap;
+    padding-top: 5px !important;
+}
+.projects_page  div[class^='company-']{
+	text-align: justify;
+}
+.projects_page  div[class^='site-']{
+	text-align: justify;
+}
+.projects_page  .cck-company{
+	height: 45px  !important;
+	//overflow-y:hidden;
+    border-bottom: 2px solid;
+    margin: 0 10px;
+}
+.projects_page  .cck-site{
+	height: 20px !important;
+    border-bottom: 2px solid;
+    margin: 0 10px;
+}
+.projects_page .company-value{
+	}
+.projects_page  .cck_project_year .cck_value{
+	float: right;
+}
+.projects_page  .cck_project_year {
+	height: 25px !important;
+	float: right;
+}
+
+.projects_page  .cck_art_readmore ,.projects_page  .cck_project_reed_more{
+    margin: 0px 5px 5px 10px;
+}
+.projects_page  .cck_page_items  .cck-pad-8:first-child{
+	margin: -6px;
+}
+
+.projects_page div.cck_contents.cck_item div.cck_value.cck_value_wysiwyg_editor p{
+    padding: 5px 20px 5px 10px !important;
+	line-height: 20px !important;
+}
+
+.projects_page div.cck_contents.cck_item div.cck_value.cck_value_wysiwyg_editor{
+	height: 130px;
+	overflow-y: hidden;
+}
+.projects_page  .cck_project_company .cck_value.cck_value_text{
+    width: 90% !important;
+    padding-left: 10px !important;
+	font-weight: normal !important;
+    font-size: 1.2em !important;
+    line-height: 1.2em !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25) !important;
+    margin: 0 !important;
+    color: #000 !important;
+    padding-bottom: 10px !important;
+}
+.projects_page  .cck_project_customers_site .cck_value.cck_value_link{
+    width: 90% !important;
+    padding-left: 10px !important;
+}
+.projects_page  .cck_project_customers_site {
+	height: 20px !important;
+}
+.projects_page .cck_value{
+	line-height: 15px !important;
+	//padding: 0 10px;
+}
+.projects_page .cck_label{
+	padding-left: 10px;
+}
+.projects_page .cck_label label{
+    white-space: nowrap;
+    font-size: 1.2em !important;
+	color: #000;
+}
+.projects_page .cck_project_image{
+	//width: 215px;
+	height: 180px;
+	width: 100%;
+	//height: 100%;
+}
+.projects_page .cck_project_image  .cck_value_upload_image{
+  position: relative;
+  top: 50% !important;
+  -webkit-transform: translateY(-50%) !important;
+  -ms-transform: translateY(-50%) !important;
+  transform: translateY(-50%) !important;
+  text-align: center;
+  padding-left: 0px !important;
+}
+.projects_page .cck_project_image  .cck_value img{
+	//margin: 0.5em 1em 0.5em 0;
+    //padding: 4px;
+    //line-height: 1.428571429;
+    //border: 1px solid #dddddd;
+    //border-radius: 4px;
+    //-webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+}
+.projects_page .pseudo_proj_list{
+	content: '';
+    width: 0;
+    height: 0;
+    border-top: 35px solid #EEEEEE;
+    border-left: 35px solid transparent;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+.projects_page .cck_art_introtext .cck_value {
+	font: normal 12px Arial;
+	text-align: justify !important;
+}
+.projects_page .cck-pos-mainbody{
+	//background-image: linear-gradient(to bottom,#A6BFBD,#fff);
+    font: normal 12px arial;
+    border: 2px solid #dddddd;
+}
+.projects_page .seb_css3{	
+    padding: 0px !important;
+}
+.projects_page .seb_css3 img{	
+    border: none; !important;
+}
+
+.projects_page .cck_art_fulltext  {
+    padding: 0 10px 10px 10px;
+}
+.projects_page .cck_art_fulltext  .cck_label{
+    padding-top: 15px;
+}
+
+.projects_page .cck_art_fulltext  .cck_label label{
+    font-family: 'Roboto Condensed', Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+	font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.projects_page  .item-pageprojects_page div.cck-company>*{
+	display: inline-block;
+    font-family: 'Roboto Condensed', Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+	font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.projects_page .cck-pos-mainbody{
+	text-shadow: none;
+}
+.projects_page .cck-pos-mainbody .cck-intro {
+	height: 100px !important;
+}
+/*Приводная техника*/
+.drive_systems_page .span4:not(.order1 ){
+	position: relative;
+    background-clip: border-box;
+    border: 2px solid #dfe2e3;
+    border-radius: 5px;
+    height: 270px;
+	margin:5px;
+    color: darkred;
+}
+.drive_systems_page .span4 a img{
+	width:180px;
+	height:185px;
+}
+.drive_systems_page .span4 .readmore{
+	position:absolute;
+    bottom: 7px;
+	left:15px;
+}
+.drive_systems_page .items-row:last-child .span3:nth-child(2) tr:nth-child(2) td a{
+	position:absolute;
+    bottom: 40px;
+	left:5px;
+}
+.drive_systems_page .btn{
+	
+    background-image: linear-gradient(to bottom,#E1ECEC,#8CD0C9);
+}
+.drive_systems_page .btn:hover{
+	
+    background-color: #98E6BA;
+}
+.drive_systems_page   a img:hover{
+	background:#A9F5EB;
+}
+.drive_systems_page #jsn-maincontent_inner{
+	background:transparent;
+}
+.drive_systems_page .jsn-article-toolbar{
+	margin-bottom: 0px;
+}
+.drive_systems_page .jsn-article-toolbar table{
+	margin-top: 0px !important;
+}
+/*Обучение специалистов*/
+.study_page .jsn-themegrid-image{
+	width:150px !important;
+}
+/*Системы ЧПУ*/
+.page_delivery_cns .span4{
+	position: relative;
+    //background-image: linear-gradient(to bottom,#F9F3F5,#8BBFF5);
+    background-clip: border-box;
+    border: 2px solid #dfe2e3;
+    border-radius: 5px;
+    height: 380px;
+	color: #361414;
+	padding: 5px;
+	margin: 5px;
+}
+.page_delivery_cns .span4 a img{
+	width:200px;
+	height:180px;
+}
+.page_delivery_cns  .items-row:last-child .span4:last-child table tr> *{
+	position:absolute;
+	padding-right:10px;
+	
+}
+.page_delivery_cns  .items-row:last-child .span4:last-child table tr> *{
+	position:absolute;
+}
+.page_delivery_cns .items-row:last-child  .span4:last-child  table tr:first-child td{
+	top:0px;
+	left: 25px;
+}
+.page_delivery_cns .items-row:last-child  .span4:last-child  table tr:nth-child(2) td{
+	top:200px;
+	width: 90%;
+}
+.page_delivery_cns .items-row:last-child  .span4:last-child  table tr:last-child td{
+	top:225px;
+}
+.page_delivery_cns .span4 .readmore{
+	position:absolute;
+    bottom: 10px;
+	left:15px;
+}
+.page_delivery_cns .items-row:last-child .span4:nth-child(2) tr:nth-child(2) td a{
+	position:absolute;
+    bottom: 40px;
+	left:5px;
+}
+.page_delivery_cns #jsn-mainbody {
+    padding: 18px 0;
+}
+.blogpage_delivery_cns h2{
+	text-align: center;
+}
+.page_delivery_cns .btn{
+	
+    background-image: linear-gradient(to bottom,#E1ECEC,#8CD0C9);
+}
+.page_delivery_cns .btn:hover{
+	
+	background-color: #98E6BA;
+}
+.page_delivery_cns   a img:hover{
+	background:#A9F5EB;
+}
+.page_delivery_cns #jsn-maincontent_inner{
+	background:transparent;
+}
+.page_delivery_cns #jsn-centercol_inner{
+    //background: rgba(177, 248, 249, 0.52);
+}
+.page_delivery_cns tr:nth-child(2) td{   
+    color: #0F1E8F;
+    text-shadow: -2px 0px #A5E671, 0px 2px #ACE97C, 2px 0px #F0A268, 0px -2px #EF9571;
+	background-image: linear-gradient(to right, #B3A1A7, #8BBFF5);
+}
+/*Сертификаты и лицензии*/
+.page_license .page-header>*{
+	text-align:center;
+	height: 70px !important;
+	vertical-align: middle;
+    font-family: 'Roboto Condensed', Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: medium !important;
+	font-weight: bold;
+    line-height: 1.0 !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+	text-transform: uppercase;
+}
+.page_license .page-header{
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.page_license .row-fluid{
+	padding-bottom:30px;
+}
+.page_license .row-fluid .span6{
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+}
+.page_license .row-fluid .span6 p{
+	margin-bottom: 25px;
+}
+.page_license .row-fluid .span6 img{
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    width: 230px;
+}
+.page_license .license_intro{
+	padding-bottom: 20px;
+}
+.page_license .license_intro a{
+	cursor: crosshair;
+}
+.page_license .blogpage_license {
+    text-align: center !important;
+    margin: 12px !important;
+}
+/*Системы измерения*/
+.mesuring_sys_page .pb-list-icons li{
+	padding-bottom: 5px !important;
+	margin-left: 10px !important;
+	min-height: 0px !important;
+}
+.mesuring_sys_page .pb-list-content-wrap {     
+	//background-image: linear-gradient(to right, rgba(228, 211, 217, 0.74), #ABD0F6);   
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 5px;
+}
+.mesuring_sys_page .pb-list-content-wrap .pb-list-content{      
+	margin: 5px;
+}
+.mesuring_sys_page .pb-list-content-wrap a:hover img{
+	background-color:#F2EB8A;
+}
+.mesuring_sys_page .jsn-bootstrap3 .pb-list-icons li{
+	margin: 6px;
+}
+/*Силовые и сигнальные кабели*/
+.pas_cabbels_page .items-row{
+	//background-image: linear-gradient(to right, rgba(228, 211, 217, 0.74), #ABD0F6);    
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 5px;
+	margin: 5px;
+}
+.pas_cabbels_page .blogpas_cabbels_page{
+	padding:5px 25px 5px 0;
+}
+/*Lika Electric Page*/
+.lika_electric_page a[data-rokbox]{
+	color: #E94F07;
+}
+.lika_electric_page a[data-rokbox]:hover{
+	color: #106793;
+}
+
+ .main_news .news-title a{
+	font-weight: bold;
+}
+.main_news .news-title a:hover{
+	text-shadow: 0 0 black !important;
+}
+
+/*Контакты*/
+.contacts-form .cck_label{
+	width: 155px ;
+}
+.page_contacts  td{
+	font-size:13px;
+}
+.cck_module_form  .cck-pos-top-a>div>*{
+	display:inline-block !important;
+}
+.cck_module_form  .cck_label_captcha_math{
+	width: 115px !important;
+}
+.cck_module_form  div.cck-pad-8 .cck-ptb{
+	padding: 0 !important;
+}
+.contacts-form div.jsn-modulecontainer_inner {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.6) !important;
+	padding-bottom: 0 !important;
+}
+.cck_conv_time >*{
+	width:100%;
+}
+input[name="conv_time"]{
+	display:none;}
+}
+.cck_conv_time .cck_label.cck_label_text{
+	width:100%; !important;
+}
+.cck-pos-top-a label{
+	float:right;
+	padding-right:10px;
+}
+/* Карта поставок*/
+.delivery_map_page  .item-pagedelivery_map_page a:not([href="#"]) {
+	color: #EC9612;
+}
+/*----------------------------------------------------------------------------------------------------*/
+/*Общие стили*/
+input, button, select, textarea, label{	
+	font-family: 'Roboto Condensed', Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.footer_tags {
+    height: 120px;
+    width: 445px;
+} /* ограничиваем размеры блока тегов, если это необходимо */
+.footer_tags ul {
+    margin: 0;
+    padding: 0;
+} /* убираем отступы у списка ulменю */
+
+.footer_tags li {
+    display: inline-block;   /* Делаем элементы списка строко-блоковыми */
+    font-size: 11px;   /* Задаем размер шрифта тегов по умолчанию */
+    line-height: 100%;   /* Задаем межстрочный интервал */
+    list-style: outside none none;   /* убираем точки у списка */
+    padding-right: 10px;   /* делаем отступы между стоящими рядом тегами */
+}
+
+.footer_tags a {
+    color: #466d00;   /* Задаем тегам цвет */
+    text-decoration: none;   /* Убираем подчеркивание ссылок */
+}
+.footer_tags .font1{font-size: 13px;}
+.footer_tags .font2{font-size: 15px;}
+.footer_tags .font3{font-size: 17px;}
+.footer_tags .font4{font-size: 19px;}
+.footer_tags .font5{font-size: 21px;}
+.footer_tags .font6{font-size: 23px;}
+
+ul.breadcrumb li >*{
+	font-size: 120% !important;
+}
+/*Отзывы*/
+
+.revews_page .revews{	
+    border: 2px solid #dddddd;
+	border-radius: 5px;
+}
+.revews_page .blogrevews_page{
+	text-align: center;
+}

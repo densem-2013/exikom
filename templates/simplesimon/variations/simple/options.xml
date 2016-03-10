@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldpath="/libraries/cck/construction/field">
+
+	<fieldset name="field_label" label="Fields">
+		<field name="field_orientation" type="cck" construction="core_field_orientation" label="Orientation" description="..." class="inputbox" />
+		<field name="field_width" type="cck" construction="core_field_width" more="px / %" label="Width" class="inputbox"
+			   description="Ative for Horizontal orientation only. Specify the width in pixels / % of the field (label+value/form) or use the auto value. If (orientation = horizontal) and (width = 100%): width = 50%." />
+		<field name="field_label" type="cck" construction="core_field_label2" default="" label="Show Label" description="..." class="inputbox" />
+		<field name="spacer1"
+			   type="spacer"
+			   label=""
+			   hr="false"
+		/>
+		<field name="field_label_position" type="cck" construction="core_field_label_position" label="Label Position" description="..." class="inputbox" />
+		<field name="field_label_color" type="cck" construction="core_field_label_color" label="Label Color" description="..." class="inputbox" />
+		<field name="field_label_align" type="cck" construction="core_field_label_align" label="Label Align" description="..." class="inputbox" />
+		<field name="field_label_width" type="cck" construction="core_field_label_width" more="px / %" label="Label Width" class="inputbox"
+			   description="Specify the width in pixels / % of the label or use the auto value."  />
+		<field name="field_label_padding_left" type="cck" construction="core_field_label_padding_left" more="px" label="Label Padding Left" description="..." class="inputbox" />
+		<field name="field_label_padding_right" type="cck" construction="core_field_label_padding_right" more="px" label="Label Padding Right" description="..." class="inputbox" />
+	</fieldset>
+	
+	<fieldset name="legend" label="Legend">
+		<field name="legend_align" type="cck" construction="core_legend_align" label="Align" description="..." class="inputbox" />
+		<field name="legend_fieldname" type="cck" construction="core_legend_fieldname" label="Fieldname" description="..." class="inputbox" />
+	</fieldset>
+	
+</form>

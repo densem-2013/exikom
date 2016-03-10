@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <extension version="3.0" type="plugin" group="content" method="upgrade">
+    <name>plg_mvsocialbuttons</name>
+    <author>Vladimir Maidanichenko</author>
+    <creationDate>2013-02-10</creationDate>
+    <copyright>Copyright (C) 2011 - 2013 Vladimir Maidanichenko ( JoomlaMaster.org.ua ). All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyright/gpl.html</license>
+    <authorEmail>support@joomlamaster.org.ua</authorEmail>
+    <authorUrl>http://joomlamaster.org.ua</authorUrl>
+    <version>2.0.0</version>
+    <description>PLG_MVSOCIALBUTTONS_XML_DESC</description>	
+    <languages folder="language">
+		<language tag="en-GB">en-GB.plg_content_mvsocialbuttons.ini</language>
+		<language tag="en-GB">en-GB.plg_content_mvsocialbuttons.sys.ini</language>
+		<language tag="ru-RU">ru-RU.plg_content_mvsocialbuttons.ini</language>
+		<language tag="ru-RU">ru-RU.plg_content_mvsocialbuttons.sys.ini</language>
+		<language tag="uk-UA">uk-UA.plg_content_mvsocialbuttons.ini</language>
+		<language tag="uk-UA">uk-UA.plg_content_mvsocialbuttons.sys.ini</language>
+	</languages>
+    <files>
+        <filename plugin="mvsocialbuttons">mvsocialbuttons.php</filename>
+		<filename>index.html</filename>
+		<filename>style.css</filename>
+		<folder>images</folder>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="style" type="list" default="default" label="PLG_MVSOCIALBUTTONS_STYLE_LABEL" description="PLG_MVSOCIALBUTTONS_STYLE_DESC" >
+				<option value="small">PLG_MVSOCIALBUTTONS_STYLE_SMALL</option>
+				<option value="default">PLG_MVSOCIALBUTTONS_STYLE_DEFAULT</option>
+				<option value="big">PLG_MVSOCIALBUTTONS_STYLE_BIG</option>
+				<option value="circular">PLG_MVSOCIALBUTTONS_STYLE_CIRCULAR</option>
+				</field>
+				<field name="position" type="list" default="2" label="PLG_MVSOCIALBUTTONS_POSITION_LABEL" description="PLG_MVSOCIALBUTTONS_POSITION_DESC" >
+				   <option value="1">PLG_MVSOCIALBUTTONS_POSITION_TOP</option>
+				   <option value="2">PLG_MVSOCIALBUTTONS_POSITION_BOTTOM</option>
+				   <option value="0">PLG_MVSOCIALBUTTONS_POSITION_ALL</option>
+				</field>
+				<field name="showInArticles" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_SHOW_IN_ARTICLES_LABEL" description="PLG_MVSOCIALBUTTONS_SHOW_IN_ARTICLES_DESC" >
+                   <option value="0">JNO</option>
+                   <option value="1">JYES</option>
+                </field>
+				<field name="excludeCats" type="text" default="" size="100" 
+						label="PLG_MVSOCIALBUTTONS_EXCLUDE_CATS_LABEL"
+						description="PLG_MVSOCIALBUTTONS_EXCLUDE_CATS_DESC" />
+     			<field name="excludeArticles" type="text" default="" size="100"
+						label="PLG_MVSOCIALBUTTONS_EXCLUDE_ARTICLES_LABEL"
+						description="PLG_MVSOCIALBUTTONS_EXCLUDE_ARTICLES_DESC" />
+                <field name="includeArticles" type="text" default="" size="100"
+                        label="PLG_MVSOCIALBUTTONS_INCLUDE_ARTICLES_LABEL"
+                        description="PLG_MVSOCIALBUTTONS_INCLUDE_ARTICLES_DESC" />
+                <field name="showTitle" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_SHOW_TITLE_LABEL" description="PLG_MVSOCIALBUTTONS_SHOW_TITLE_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="title" type="text" default="Впишите сюда свой заголовок" size="100" 
+						label="PLG_MVSOCIALBUTTONS_TITLE_LABEL"
+						description="PLG_MVSOCIALBUTTONS_TITLE_DESC" />
+				<field name="displayLines" type="list" default="mv-sbb-bothl" label="PLG_MVSOCIALBUTTONS_DISPLAY_LINES_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_LINES_DESC" >
+				   <option value="mv-sbb-nl">PLG_MVSOCIALBUTTONS_DISPLAY_LINES_NO</option>
+				   <option value="mv-sbb-tl">PLG_MVSOCIALBUTTONS_DISPLAY_LINES_TOP</option>
+				   <option value="mv-sbb-bl">PLG_MVSOCIALBUTTONS_DISPLAY_LINES_BOTTOM</option>
+				   <option value="mv-sbb-bothl">PLG_MVSOCIALBUTTONS_DISPLAY_LINES_ALL</option>
+				</field>
+				<field name="displayIcons" type="list" default="mv-sbb-left" label="PLG_MVSOCIALBUTTONS_DISPLAY_ICONS_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_ICONS_DESC" >
+				   <option value="mv-sb-left">PLG_MVSOCIALBUTTONS_DISPLAY_ICONS_LEFT</option>
+				   <option value="mv-sb-right">PLG_MVSOCIALBUTTONS_DISPLAY_ICONS_RIGHT</option>
+				   <option value="mv-sb-center">PLG_MVSOCIALBUTTONS_DISPLAY_ICONS_CENTER</option>
+				</field>
+				<field name="displayDelicious" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_DELICIOUS_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_DELICIOUS_DESC" >
+				  <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayDigg" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_DIGG_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_DIGG_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayFacebook" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_FACEBOOK_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_FACEBOOK_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayGoogle" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_GOOGLE_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_GOOGLE_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayLinkedIn" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_LINKEDIN_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_LINKEDIN_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayTechnorati" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_TECHNORATI_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_TECHNORATI_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayTwitter" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_TWITTER_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_TWITTER_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayVkruButton" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_VKCOM_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_VKCOM_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayLivejButton" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_LIVEJOURNAL_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_LIVEJOURNAL_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayMoymirButton" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_MOYMIR_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_MOYMIR_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayYaruButton" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_YARU_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_YARU_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayOdnoklassnikiButton" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_ODNOKLASSNIKI_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_ODNOKLASSNIKI_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayBobrdobrButton" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_BOBRDOBR_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_BOBRDOBR_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+				<field name="displayLiveinternetButton" type="radio" class="btn-group" default="1" label="PLG_MVSOCIALBUTTONS_DISPLAY_LIVEINTERNET_LABEL" description="PLG_MVSOCIALBUTTONS_DISPLAY_LIVEINTERNET_DESC" >
+				   <option value="0">JNO</option>
+				   <option value="1">JYES</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="spacer2" type="spacer" class="text" label="PLG_MVSOCIALBUTTONS_DISPLAY_ADVANCED_LABEL" />
+                <field name="ebuttons1" type="textarea" default="" label="PLG_MVSOCIALBUTTONS_EBUTTONS_1_LABEL" description="PLG_MVSOCIALBUTTONS_EBUTTONS_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons2" type="textarea" default="" label="PLG_MVSOCIALBUTTONS_EBUTTONS_2_LABEL" description="PLG_MVSOCIALBUTTONS_EBUTTONS_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons3" type="textarea" default="" label="PLG_MVSOCIALBUTTONS_EBUTTONS_3_LABEL" description="PLG_MVSOCIALBUTTONS_EBUTTONS_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons4" type="textarea" default="" label="PLG_MVSOCIALBUTTONS_EBUTTONS_4_LABEL" description="PLG_MVSOCIALBUTTONS_EBUTTONS_DESC" cols="50" rows="10" filter="raw" />
+                <field name="ebuttons5" type="textarea" default="" label="PLG_MVSOCIALBUTTONS_EBUTTONS_5_LABEL" description="PLG_MVSOCIALBUTTONS_EBUTTONS_DESC" cols="50" rows="10" filter="raw" />
+			</fieldset>
+        </fields>
+	</config>
+</extension>
